@@ -15,7 +15,7 @@ Create a collaborative-based filtering following the website instructions
 
 ## 3, Hybrid_approach_movie_recommendation.ipynb 
 
-### Content-Based Filtering: 
+### -  Content-Based Filtering: 
 This method recommends items based on the features of the movies themselves and the user's preferences. In this case, the recommendation is based on metadata features such as keywords, release year, genres, production companies, budget, revenue, and runtime.
 
 ### Implementation: 
@@ -32,7 +32,7 @@ The Ridge Regression model exhibited the weakest performance. It showed that mov
 
 The Random Forest model outperformed other regression models. This suggests that the ensemble method better captures the complex relationships between the features and the movie ratings.
 
-### Collaborative Filtering: 
+### -   Collaborative Filtering: 
 This method finds other users similar to you and recommends their choices. For example, if you and a friend both love The Shawshank Redemption (high rating given), and your friend also loves Forrest Gump, the system will recommend Forrest Gump to you, thinking you might share your friend's taste. 
 
 ### Implementation: 
@@ -50,7 +50,7 @@ K-NN tuning (k=10) RMSE 0.9365 R2 0.1938
 The SVD model performed better than K-Nearest Neighbors in predicting user ratings. After tuning, the SVD model achieved an improved RMSE of 0.8807
 
 
-### Switching approach: 
+### -  Switching approach: 
 We would always prefer the collaborative filtering approach when we have an adequate number of rated movies by user because the accuracy of the approach is higher. However, whenever we get a new user or a user without many reviews, we can rely on content-based models. 
 
 
