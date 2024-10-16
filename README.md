@@ -7,18 +7,22 @@ https://www.freecodecamp.org/news/how-to-build-a-movie-recommendation-system-bas
 
 ## Codes
 1, Movie_recommendation_follow_website_instruction.ipynb
+
 Create a collaborative-based filtering following the website instructions
 
 2, Collaborative-based_recomemdation.ipynb
 
 
 3, Hybrid_approach_movie_recommendation.ipynb 
+
 Content-Based Filtering: This method recommends items based on the features of the movies themselves and the user's preferences. In this case, the recommendation is based on metadata features such as keywords, release year, genres, production companies, budget, revenue, and runtime.
 Implementation: After performing general preprocessing tasks such as handling missing data and outliers, we apply TF-IDF to encode text features and one-hot encoding for genres. These categorical representations are combined with numerical features, allowing us to leverage various regression models such as Decision Tree, Random Forest, and Ridge Regression to predict movie ratings.
 
 ### Results:
 Ridge Regression: RMSE 1.0661 R² Score: 0.0033
+
 Decision Tree: RMSE 1.0069  R² Score: 0.1108
+
 Random Forest: RMSE 0.9896 R² Score: 0.1411
 
 The Ridge Regression model exhibited the weakest performance. It showed that movie rating data likely involves more complex, non-linear interactions that this model could not effectively capture.
@@ -32,8 +36,11 @@ Using Matrix Factorization techniques like Singular Value Decomposition (SVD) or
 
 ### Results: 
 SVD RMSE 0.9977 R2 0.2756 
+
 SVD tuning (n_factors =10) RMSE 0.8807 R2 0.2869 
+
 K-Nearest Neighbors RMSE 0.9383 R2 0.1905 
+
 K-NN tuning (k=10) RMSE 0.9365 R2 0.1938 
 
 The SVD model performed better than K-Nearest Neighbors in predicting user ratings. After tuning, the SVD model achieved an improved RMSE of 0.8807
